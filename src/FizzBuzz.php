@@ -5,7 +5,7 @@ namespace App;
 Class FizzBuzz {
 
     public function fizzBuzz(int $numero){
-        return 13;
+        return strval($numero);
     }
 
 }

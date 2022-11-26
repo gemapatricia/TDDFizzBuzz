@@ -30,6 +30,12 @@ Class FizzBuzzTest extends TestCase{
         $this->assertEquals("Buzz", $cadena, "No coincide la cadena");
     }
 
+    public function testConvertNumberMultipleOfFiveAndThree(){
+        $fizzbuzz = new App\FizzBuzz();
+        $cadena = $fizzbuzz->fizzbuzz(25);
+        $this->assertEquals("FizzBuzz", $cadena, "No coincide la cadena");
+    }
+
 }
 
 ?>

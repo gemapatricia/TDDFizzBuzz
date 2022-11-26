@@ -1,6 +1,8 @@
-<?php
+<?php declare( strict_types = 1 );
 
 use \PHPUnit\Framework\TestCase;
+
+use function PHPUnit\Framework\assertEquals;
 
 Class FizzBuzzTest extends TestCase{
 
@@ -17,9 +19,16 @@ Class FizzBuzzTest extends TestCase{
     }
 
     public function testStringInserted(){
-        $fizzbuzz = new App\FizzBuzz();
-        $cadena = $fizzbuzz->fizzbuzz("4");
-        $this->assertEquals("4", $cadena, "No coincide la cadena");
+        try{
+            $fizzbuzz = new App\FizzBuzz();
+            $cadena = $fizzbuzz->fizzbuzz("4");
+            assertEquals(4, $cadena);
+
+        }
+        catch(Exception $e){
+            assertEquals("No se ha introducido un número", $e->getMessage(), "No coincide la excepción");
+        }
+        
     }
 }
 

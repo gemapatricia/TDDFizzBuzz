@@ -26,7 +26,7 @@ Class FizzBuzzTest extends TestCase{
 
     public function testConvertNumberMultipleOfFive(){
         $fizzbuzz = new App\FizzBuzz();
-        $cadena = $fizzbuzz->fizzbuzz(15);
+        $cadena = $fizzbuzz->fizzbuzz(25);
         $this->assertEquals("Buzz", $cadena, "No coincide la cadena");
     }
 

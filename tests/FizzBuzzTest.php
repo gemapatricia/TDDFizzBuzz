@@ -15,6 +15,12 @@ Class FizzBuzzTest extends TestCase{
         $cadena = $fizzbuzz->fizzbuzz(7);
         $this->assertEquals("7", $cadena, "No coincide la cadena");
     }
+
+    public function testStringInserted(){
+        $fizzbuzz = new App\FizzBuzz();
+        $cadena = $fizzbuzz->fizzbuzz("4");
+        $this->assertEquals("4", $cadena, "No coincide la cadena");
+    }
 }
 
 ?>

@@ -6,9 +6,8 @@ use Exception;
 
 Class FizzBuzz {
 
-    public function fizzBuzz($numero):string{
-        if (gettype($numero)=="integer") return strval($numero);
-        else throw new Exception("No se ha introducido un número");
+    public function fizzBuzz(int $numero):string{
+        return strval($numero);
     }
 
 }

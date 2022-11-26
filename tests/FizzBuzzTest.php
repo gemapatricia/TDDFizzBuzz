@@ -18,18 +18,6 @@ Class FizzBuzzTest extends TestCase{
         $this->assertEquals("7", $cadena, "No coincide la cadena");
     }
 
-    public function testStringInserted(){
-        try{
-            $fizzbuzz = new App\FizzBuzz();
-            $cadena = $fizzbuzz->fizzbuzz("4");
-            assertEquals(4, $cadena);
-
-        }
-        catch(Exception $e){
-            assertEquals("No se ha introducido un número", $e->getMessage(), "No coincide la excepción");
-        }
-        
-    }
 }
 
 ?>

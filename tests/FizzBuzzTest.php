@@ -18,6 +18,12 @@ Class FizzBuzzTest extends TestCase{
         $this->assertEquals("7", $cadena, "No coincide la cadena");
     }
 
+    public function testConvertNumberMultipleOfThree(){
+        $fizzbuzz = new App\FizzBuzz();
+        $cadena = $fizzbuzz->fizzbuzz(6);
+        $this->assertEquals("Fizz", $cadena, "No coincide la cadena");
+    }
+
 }
 
 ?>
